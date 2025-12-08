@@ -47,3 +47,22 @@ iframe#tela {
     flex-direction: column;
     gap: 30px;
 }
+
+section#botoes {
+    text-align: right;
+}
+
+section#botoes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*borda redonda*/
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
+    box-sizing: border-box;/*a borda faz parte da caixa então quando passar o mouse não vai mecher as outras imagens*/
+}
+
+section#botoes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transform: translate(-3px, -3px);/*move 3px para cima e esquerda*/
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.600);
+    transition: transform 0.5s; /*move suavemente em 0.5 segundos*/
+}
